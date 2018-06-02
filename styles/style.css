@@ -45,17 +45,17 @@ img {
   position: relative;
 }
 
-#slider-image-1:target ~ .image-holder
+.active-slide-1 ~ .image-holder
 {
   left: 0px;
 }
 
-#slider-image-2:target ~ .image-holder
+.active-slide-2 ~ .image-holder
 {
   left: -540px;
 }
 
-#slider-image-3:target ~ .image-holder
+.active-slide-3 ~ .image-holder
 {
   left: -1080px;
 }

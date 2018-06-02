@@ -1,5 +1,7 @@
 var index = 0;
 
+start();
+
 function start() {
   var dots = document.getElementsByClassName("dot");
   var i;
