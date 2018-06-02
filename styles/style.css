@@ -1,0 +1,85 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  text-align: center;
+}
+
+.slider-holder
+{
+  width: 540px;
+  height: 400px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.image-holder
+{
+  width: 1620px;
+  background-color: red;
+  height: 400px;
+  position: relative;
+  
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+
+img {
+  width: 540px;
+  height: 400px;
+}
+
+.slider-image
+{
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+#slider-image-1:target ~ .image-holder
+{
+  left: 0px;
+}
+
+#slider-image-2:target ~ .image-holder
+{
+  left: -540px;
+}
+
+#slider-image-3:target ~ .image-holder
+{
+  left: -1080px;
+}
+
+.button-holder
+{
+  position: relative;
+}
+
+.dot {
+  margin: 2px;
+  margin-top: 4px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  background-color: grey;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: #404349;
+}
+
+.active-dot {
+  background-color: #353638;
+}
